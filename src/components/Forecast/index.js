@@ -5,7 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { condition } from "../../utils/condition";
 
 export default function Forecast({ data }) {
-	let icon = condition(data.condition)
+	let icon = condition(data.condition);
 
 	return (
 		<View style={styles.container}>
@@ -29,14 +29,15 @@ export default function Forecast({ data }) {
 const styles = StyleSheet.create({
 	container: {
 		backgroundColor: "#FFF",
-		marginLeft: 12,
+		marginLeft: 6,
+		marginRight: 6,
 		borderRadius: 8,
 		paddingTop: 10,
 		paddingBottom: 10,
 		paddingLeft: 14,
 		paddingRight: 14,
 		justifyContent: "space-around",
-		alignItems: "center",
+		alignItems: "center"
 	},
 	date: {
 		fontSize: 14,
